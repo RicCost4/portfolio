@@ -164,11 +164,13 @@ section> a:hover{
 
 footer{
     background-color: var(--cor2);
-    border-radius: 30px;
+    border: 30px;
     color: var(--cor1);
     text-align: center;
     font-size: 0.9em;
+    margin: auto;
     padding: 10px;
+    
 }
 
 footer a{
