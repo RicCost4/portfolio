@@ -13,13 +13,40 @@ body {
     margin: 0px;
 }
 
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header  h1{
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
+}
+
+header  p{
+    font-size: 1.2em;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
+}
+
+header>h1, p{
+    color: var(--cor0);
+}
+
 #MBarra {
     background-color: var(--cor2);
     margin: auto;
     padding: 0 20px;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: calc(100% - 40px);
     top: 0px;
 }
@@ -49,7 +76,6 @@ body {
     font-size: 36px;
     position: absolute;
     right: 10px;
-    top: 10px;
     display: none;
 }
 
@@ -57,6 +83,7 @@ body {
 #logo,
 #MSand {
     color: var(--cor1);
+    transition-duration: 1s;
 }
 
 #MBarra,
@@ -79,6 +106,33 @@ body {
 
 main {
     background-color: var(--cor1);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+footer{
+    background-color: var(--cor2);
+    border-radius: 30px;
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+footer a{
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
 
 @media (max-width: 850px) {
