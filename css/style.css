@@ -9,11 +9,11 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor4);
     margin: 0px;
 }
 
-nav {
+#MBarra {
     background-color: var(--cor2);
     margin: auto;
     padding: 0 20px;
@@ -24,12 +24,12 @@ nav {
     top: 0px;
 }
 
-h1 {
+#logo {
     margin: 0px;
     padding: 10px;
 }
 
-ul {
+#menu {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -38,15 +38,14 @@ ul {
 
 }
 
-li {
+.lista {
     margin: 0px;
     padding: 0 20px;
 }
 
-button {
+#MSand {
     background-color: transparent;
     border: none;
-    color: var(--cor1);
     font-size: 36px;
     position: absolute;
     right: 10px;
@@ -54,61 +53,60 @@ button {
     display: none;
 }
 
-nav>h1,
-p {
+.Mconteudo,
+#logo,
+#MSand {
     color: var(--cor1);
 }
 
-nav,
-ul {
+#MBarra,
+#menu {
     display: flex;
     flex-direction: row;
 }
 
-li:hover,
-h1:hover,
-button:hover {
+.lista:hover,
+#logo:hover,
+#MSand:hover {
     cursor: pointer;
     opacity: 0.8;
     background-color: var(--cor4);
 }
 
-button:focus~ul {
+#MSand:focus~#menu {
     height: 360px;
 }
 
 main {
     background-color: var(--cor1);
-    width: min(100% - 15px, 840px);
-    margin-inline: auto;
 }
 
 @media (max-width: 850px) {
-    nav {
+    #MBarra {
         align-items: flex-start;
     }
 
-    ul {
+    #menu {
         text-align: center;
         margin: 0;
         height: 0;
     }
 
-    button {
+    #MSand {
         display: flex;
     }
 
-    h1 {
+    #logo {
         margin: 10px;
     }
 
-    li,
-    ul {
+    .lista,
+    #menu {
         width: 100%;
     }
 
-    nav,
-    ul {
+    #MBarra,
+    #menu {
         flex-direction: column;
     }
 }
