@@ -104,6 +104,16 @@ header>h1, p{
     height: 360px;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover,
+.Mconteudo:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+}
+
 main {
     background-color: var(--cor1);
     min-width: 300px;
