@@ -9,12 +9,13 @@
 }
 
 body {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
     margin: 0px;
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    color: var(--cor4);
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
@@ -23,6 +24,7 @@ header{
 header  h1{
     font-weight: normal;
     font-size: 3em;
+    color: var(--cor4);
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
@@ -42,10 +44,10 @@ header>h1, p{
 }
 
 #MBarra {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     margin: auto;
     padding: 0 20px;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
     width: calc(100% - 40px);
     top: 0px;
@@ -54,6 +56,9 @@ header>h1, p{
 #logo {
     margin: 0px;
     padding: 10px;
+    background-color: var(--cor2);
+    border-radius: 30px;
+    font-size: 36px;
 }
 
 #menu {
@@ -66,22 +71,20 @@ header>h1, p{
 }
 
 .lista {
-    margin: 0px;
+    margin: 16px;
     padding: 0 20px;
 }
 
-#MSand {
-    background-color: transparent;
-    border: none;
+.button {
+    background-color: var(--cor2);
+    border: transparent;
+    border-radius: 30px;
     font-size: 36px;
-    position: absolute;
-    right: 10px;
-    display: none;
 }
 
 .Mconteudo,
 #logo,
-#MSand {
+.button {
     color: var(--cor1);
     transition-duration: 1s;
 }
@@ -89,127 +92,80 @@ header>h1, p{
 #MBarra,
 #menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.lista:hover,
 #logo:hover,
-#MSand:hover {
+.button:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: var(--cor4);
-}
-
-#MSand:focus~#menu {
-    height: 210px;
-}
-
-nav a{
-    text-decoration: none;
-}
-
-nav a:hover,
-.Mconteudo:hover{
-    text-decoration: underline;
-    color: var(--cor0);
-}
-
-main {
-    background-color: var(--cor1);
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-main>h1{
-    text-align: center;
-    background-color: var(--cor4);
-    color: var(--cor0);
-    font-size: 2em;
-    border-radius: 25px;
-}
-
-.subT{
-    margin: 2px;
-    padding: 10px;
-    color: var(--cor1);
-    max-width: 250px;
     background-color: var(--cor3);
-    border-radius: 20px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
-}
-
-section>p{
     color: var(--cor4);
-    text-align: justify;
 }
-
-section>a{
-    text-align: center;
-    color: var(--cor2);
-    font-size: 2em;
-    text-decoration: none;
-
+#btn01{
+    padding: 5px 31px;
 }
-
-section> a:hover{
-    background-color: var(--cor4);
-    color: var(--cor0);
-    cursor: pointer;
+#btn02{
+    padding: 5px 45px;
+}
+#btn03{
+    padding: 5px 24px;
+}
+#btn04{
+    padding: 5px 42px;
 }
 
 footer{
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     border: 30px;
-    color: var(--cor1);
+    color: var(--cor0);
     text-align: center;
     font-size: 0.9em;
     margin: auto;
     padding: 10px;
-    
 }
 
-footer a{
-    color: var(--cor1);
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-footer a:hover{
-    text-decoration: underline;
-    color: var(--cor1);
-}
-
-@media (max-width: 850px) {
-    #MBarra {
-        align-items: flex-start;
+@media (max-width: 700px) {
+    header{
+        min-height: 100px;
     }
-
-    #menu {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-
-    #MSand {
-        display: flex;
-    }
-
     #logo {
-        margin: 10px;
+        margin: 0px;
+        padding: 10px;
+        background-color: var(--cor2);
+        border-radius: 30px;
+        font-size: 30px;
+    }
+    
+    #MBarra {
+        padding: 0 20px;
+    }
+    
+    .lista {
+        margin: 9px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    header{
+        min-height: 50px;
+    }
+    #logo {
+        margin: 0px;
+        padding: 20px;
+        background-color: var(--cor2);
+        border-radius: 30px;
+        font-size: 30px;
+    }
+    
+    #menu {
+        margin-top: 25px;
+    
     }
 
-    .lista,
-    #menu {
-        width: 100%;
-    }
-
-    #MBarra,
-    #menu {
-        flex-direction: column;
+    .lista {
+        margin: 25px;
+        padding: 0 20px;
     }
 }
