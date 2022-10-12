@@ -13,11 +13,11 @@ body {
     margin: 0px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom, #515BD4, #8134AF);
     color: var(--cor4);
     min-height: 150px;
@@ -25,7 +25,7 @@ header{
     padding-top: 30px;
 }
 
-header  h1{
+header h1 {
     font-weight: normal;
     font-size: 3em;
     color: black;
@@ -72,16 +72,41 @@ header  h1{
     border-radius: 40px;
     display: flex;
 }
-.imgLogo{
+
+.imgLogo {
     margin-top: 14px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-.texto{
+.texto {
     padding-left: 15px;
     font-size: 1.5em;
+}
+
+#btn01 {
+    padding: 0px 31px 0px 5px;
+    background-color: white;
+    color: black;
+}
+
+#btn02 {
+    padding: 0px 45px 0px 5px;
+    background-color: white;
+    color: green;
+}
+
+#btn03 {
+    padding: 0px 24px 0px 5px;
+    background-color: #DD2A7B;
+    color: white;
+}
+
+#btn04 {
+    padding: 0px 42px 0px 5px;
+    background-color: white;
+    color: blue;
 }
 
 .Mconteudo,
@@ -96,34 +121,23 @@ header  h1{
     flex-direction: column;
 }
 
-#logo:hover{
+#logo:hover {
     background-color: rgba(0, 0, 0, 0.63);
 }
+
 .button:hover {
     cursor: pointer;
 }
-#btn01{
-    padding: 0px 31px 0px 5px;
-    background-color: white;
-    color: black;
-}
-#btn02{
-    padding: 0px 45px 0px 5px;
-    background-color: white;
-    color: green;
-}
-#btn03{
-    padding: 0px 24px 0px 5px;
-    background-color: #DD2A7B;
-    color: white;
-}
-#btn04{
-    padding: 0px 42px 0px 5px;
-    background-color: white;
-    color: blue;
+
+#btn01:hover, 
+#btn02:hover, 
+#btn03:hover, 
+#btn04:hover {
+    background-color: var(--cor2);
+    color: red;
 }
 
-footer{
+footer {
     background-color: var(--cor4);
     border: 30px;
     color: var(--cor0);
@@ -134,18 +148,19 @@ footer{
 }
 
 @media (max-width: 700px) {
-    header{
+    header {
         min-height: 100px;
         padding-top: 5px;
     }
-    header  h1{
+
+    header h1 {
         font-size: 2.5em;
     }
-    
+
     #MBarra {
         padding: 0 20px;
     }
-    
+
     .lista {
         margin: 8px;
         padding: 0 20px;
@@ -153,27 +168,29 @@ footer{
 }
 
 @media (max-width: 400px) {
-    header{
+    header {
         min-height: 50px;
         padding-top: 1px;
     }
+
     #logo {
         margin-top: 15px;
         padding: 10px;
         width: 120px;
         height: 120px;
     }
-    
+
     #menu {
         margin-top: 25px;
-    
+
     }
 
     .lista {
         margin: 10px;
         padding: 0 20px;
     }
-    #ultimo{
+
+    #ultimo {
         padding-bottom: 50px;
     }
 }
