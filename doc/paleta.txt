@@ -1,0 +1,9 @@
+Paleta de cores do Projeto "My Portfolio"
+
+    Cores Principais
+        #f22b56
+        #9b4b54
+        #4d8f81
+        #78bd91
+        #ebebab
+
