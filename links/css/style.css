@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 :root {
-    --cor0: #515BD4;
-    --cor1: #8134AF;
-    --cor2: #F58529;
+    --cor0: #f22b56;
+    --cor1: #9b4b54;
+    --cor2: #4d8f81;
     --cor3: #78bd91;
     --cor4: #ebebab;
 }
 
 body {
-    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+    background-color: var(--cor4);
     margin: 0px;
 }
 
@@ -17,9 +17,9 @@ a {
     text-decoration: none;
 }
 
+/* cabeçalho */
 header {
-    background-image: linear-gradient(to bottom, #515BD4, #8134AF);
-    color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
@@ -28,16 +28,31 @@ header {
 header h1 {
     font-weight: normal;
     font-size: 3em;
-    color: black;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
 
+header p {
+    font-size: 1.2em;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
+}
+
+header>h1,
+p {
+    color: var(--cor0);
+}
+
+/* menu */
 #MBarra {
-    background-color: #8134AF;
+    background-color: var(--cor2);
     margin: auto;
     padding: 0 20px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: calc(100% - 40px);
     top: 0px;
@@ -45,11 +60,7 @@ header h1 {
 
 #logo {
     margin: 0px;
-    padding: 5px;
-    background-color: black;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    padding: 10px;
 }
 
 #menu {
@@ -62,135 +73,153 @@ header h1 {
 }
 
 .lista {
-    margin: 7px;
+    margin: 0px;
     padding: 0 20px;
 }
 
-.button {
-    background-color: var(--cor2);
-    border: transparent;
-    border-radius: 40px;
-    display: flex;
-}
-
-.imgLogo {
-    margin-top: 14px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.texto {
-    padding-left: 15px;
-    font-size: 1.5em;
-}
-
-#btn01 {
-    padding: 0px 31px 0px 5px;
-    background-color: white;
-    color: black;
-}
-
-#btn02 {
-    padding: 0px 45px 0px 5px;
-    background-color: white;
-    color: green;
-}
-
-#btn03 {
-    padding: 0px 24px 0px 5px;
-    background-color: #DD2A7B;
-    color: white;
-}
-
-#btn04 {
-    padding: 0px 42px 0px 5px;
-    background-color: white;
-    color: blue;
+#MSand {
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    display: none;
 }
 
 .Mconteudo,
 #logo,
-.button {
+#MSand {
+    color: var(--cor1);
     transition-duration: 1s;
 }
 
 #MBarra,
 #menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#logo:hover {
-    background-color: rgba(0, 0, 0, 0.63);
+.lista:hover,
+#logo:hover,
+#MSand:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: var(--cor4);
 }
 
-.button:hover {
+#MSand:focus~#menu {
+    height: 210px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover,
+.Mconteudo:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
+
+/* corpo */
+main {
+    background-color: var(--cor1);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+main>h1 {
+    text-align: center;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-size: 2em;
+    border-radius: 25px;
+}
+
+.subT {
+    margin: 2px;
+    padding: 10px;
+    color: var(--cor1);
+    max-width: 250px;
+    background-color: var(--cor3);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+section>p {
+    color: var(--cor4);
+    text-align: justify;
+}
+section>p>a {
+    color: var(--cor0);
+}
+
+section>a {
+    text-align: center;
+    color: var(--cor2);
+    font-size: 2em;
+    text-decoration: none;
+}
+section>a:hover {
+    background-color: var(--cor4);
+    color: var(--cor0);
     cursor: pointer;
 }
 
-#btn01:hover, 
-#btn02:hover, 
-#btn03:hover, 
-#btn04:hover {
-    background-color: var(--cor2);
-    color: red;
-}
-
+/* rodape */
 footer {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     border: 30px;
-    color: var(--cor0);
+    color: var(--cor1);
     text-align: center;
     font-size: 0.9em;
     margin: auto;
     padding: 10px;
 }
 
-@media (max-width: 700px) {
-    header {
-        min-height: 100px;
-        padding-top: 5px;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    #MBarra {
-        padding: 0 20px;
-    }
-
-    .lista {
-        margin: 8px;
-        padding: 0 20px;
-    }
+footer a {
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
 }
 
-@media (max-width: 400px) {
-    header {
-        min-height: 50px;
-        padding-top: 1px;
-    }
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
 
-    #logo {
-        margin-top: 15px;
-        padding: 10px;
-        width: 120px;
-        height: 120px;
+/* responsividade */
+@media (max-width: 850px) {
+    #MBarra {
+        align-items: flex-start;
     }
 
     #menu {
-        margin-top: 25px;
-
+        text-align: center;
+        margin: 0;
+        height: 0;
     }
 
-    .lista {
+    #MSand {
+        display: flex;
+    }
+
+    #logo {
         margin: 10px;
-        padding: 0 20px;
     }
 
-    #ultimo {
-        padding-bottom: 50px;
+    .lista,
+    #menu {
+        width: 100%;
+    }
+
+    #MBarra,
+    #menu {
+        flex-direction: column;
     }
 }
