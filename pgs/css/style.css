@@ -170,6 +170,14 @@ section>a:hover {
     color: var(--cor0);
     cursor: pointer;
 }
+/* frame */
+#tela{
+    display: block;
+    width: 90vh;
+    margin: auto;
+    border: 2px solid black;
+    height: 400px;
+}
 
 /* rodape */
 footer {
@@ -222,5 +230,22 @@ footer a:hover {
     #MBarra,
     #menu {
         flex-direction: column;
+    }
+
+    /* frame */
+    #tela{
+        width: 80vh;
+    }
+}
+@media (max-width: 750px) {
+    /* frame */
+    #tela{
+        width: 50vh;
+    }
+}
+@media (max-width: 400px) {
+    /* frame */
+    #tela{
+        width: 42vh;
     }
 }
