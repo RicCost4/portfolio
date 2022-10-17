@@ -171,6 +171,14 @@ section>a:hover {
     color: var(--cor0);
     cursor: pointer;
 }
+/* frame */
+#tela{
+    display: block;
+    width: 90vh;
+    margin: auto;
+    border: 2px solid black;
+    height: 400px;
+}
 
 .aIframe{
     margin: auto;
