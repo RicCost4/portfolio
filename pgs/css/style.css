@@ -145,7 +145,6 @@ main>h1 {
     margin: 2px;
     padding: 10px;
     color: var(--cor1);
-    max-width: 250px;
     background-color: var(--cor3);
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
@@ -155,6 +154,7 @@ section>p {
     color: var(--cor4);
     text-align: justify;
 }
+
 section>p>a {
     color: var(--cor0);
 }
@@ -165,10 +165,27 @@ section>a {
     font-size: 2em;
     text-decoration: none;
 }
+
 section>a:hover {
     background-color: var(--cor4);
     color: var(--cor0);
     cursor: pointer;
+}
+
+.aIframe{
+    margin: auto;
+    max-width: 100px;
+    border-radius: 15px;
+    display: block;
+}
+
+/* frame */
+#tela {
+    display: block;
+    width: 90vh;
+    margin: auto;
+    border: 2px solid black;
+    height: 400px;
 }
 
 /* rodape */
@@ -222,5 +239,12 @@ footer a:hover {
     #MBarra,
     #menu {
         flex-direction: column;
+    }
+
+    /* frame */
+    #tela {
+        margin: 0px;
+        padding: 0px;
+        width: 90vw;
     }
 }

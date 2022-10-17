@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face{
+@font-face {
     font-family: 'android';
-    src:url(' ../fontes/idroid.otf') format('opentype');
+    src: url(' ../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
-:root{
+:root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
@@ -20,28 +20,28 @@
     --fonte-android: 'android', 'cursive';
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
-a.externo::after{
+a.externo::after {
     content: '\1F517';
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
 }
 
-header  h1{
+header h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-weight: normal;
@@ -50,7 +50,7 @@ header  h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
 
-header  p{
+header p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
@@ -62,18 +62,18 @@ header  p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
 
-nav{
+nav {
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.63);
     text-align: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-nav  a{
+nav a {
     color: var(--cor1);
     padding: 10px;
     border-radius: 5px;
@@ -82,12 +82,12 @@ nav  a{
     transition-duration: 1s;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
 }
 
-main{
+main {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -98,7 +98,7 @@ main{
     border-bottom-right-radius: 30px;
 }
 
-main p{
+main p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
@@ -106,12 +106,12 @@ main p{
     line-height: 2em;
 }
 
-main strong{
+main strong {
     color: var(--cor4);
     font-weight: bold;
 }
 
-main a{
+main a {
     background-color: var(--cor1);
     color: var(--cor5);
     padding: 2px 6px;
@@ -119,29 +119,29 @@ main a{
     font-weight: bold;
 }
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
     color: var(--cor4);
 }
 
-main img{
+main img {
     width: 100%;
 }
 
-main img.pequena{
+main img.pequena {
     display: block;
     max-width: 350px;
     margin: auto;
 }
 
-main h1{
+main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
     font-weight: normal;
     font-size: 1.8em;
 }
 
-main h2{
+main h2 {
     color: var(--cor4);
     font-family: var(--fonte-android);
     font-weight: normal;
@@ -150,7 +150,7 @@ main h2{
     text-indent: 8px;
 }
 
-.video{
+.video {
     background-color: var(--cor5);
     margin: 0px -20px 30px -20px;
     padding: 20px;
@@ -158,7 +158,7 @@ main h2{
     position: relative;
 }
 
-.video > iframe{
+.video>iframe {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -166,14 +166,14 @@ main h2{
     height: 90%;
 }
 
-aside{
+aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
 }
 
-aside > h3{
+aside>h3 {
     background-color: var(--cor4);
     color: white;
     padding: 10px;
@@ -181,13 +181,13 @@ aside > h3{
     border-radius: 10px 10px 0px 0px;
 }
 
-aside > ul{
+aside>ul {
     list-style-type: "\2714\00A0";
     list-style-position: inside;
     columns: 2;
 }
 
-footer{
+footer {
     background-color: var(--cor5);
     color: white;
     text-align: center;
@@ -195,13 +195,13 @@ footer{
     padding: 5px;
 }
 
-footer a{
+footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
