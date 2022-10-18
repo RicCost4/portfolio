@@ -141,13 +141,22 @@ main>h1 {
     border-radius: 25px;
 }
 
-.subT {
+.subTI,
+.subTC,
+.subTP {
     margin: 2px;
     padding: 10px;
     color: var(--cor1);
     background-color: var(--cor3);
-    border-radius: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+.subTI,
+.subTC{
+    border-radius: 20px;
+}
+.subTP{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 section>p {
@@ -186,6 +195,11 @@ section>a:hover {
     margin: auto;
     border: 2px solid black;
     height: 400px;
+}
+
+.caixa{
+    margin-top: 5px;
+    padding: 5px 20px 0px 20px;
 }
 
 /* rodape */
