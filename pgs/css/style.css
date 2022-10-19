@@ -182,19 +182,21 @@ section a:hover {
 .subTC,
 .subTP {
     font-family: var(--fontSubTitulo);
-    margin: 2px;
     padding: 10px;
     color: var(--cor1);
     background-color: var(--cor3);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
 }
 
 .subTI,
 .subTC {
+    margin: 2px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
     border-radius: 20px;
 }
 
 .subTP {
+    margin: 0px;
+    margin-top: 15px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -211,7 +213,6 @@ section a:hover {
     padding: 0px 15px;
 }
 
-
 .aIframe {
     margin: auto;
     max-width: 100px;
@@ -221,18 +222,39 @@ section a:hover {
     display: block;
 }
 
-/* frame */
-#tela {
-    display: block;
-    width: 90vh;
-    margin: auto;
-    border: 2px solid black;
-    height: 400px;
+.caixa {
+    margin: 0px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    padding: 5px 20px 0px 20px;
 }
 
-.caixa {
-    margin-top: 5px;
-    padding: 5px 20px 0px 20px;
+#div1,
+#div2,
+#div3 {
+    display: none;
+}
+
+.btn {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    padding: 0px 10px;
+    border: none;
+
+    font-size: 30px;
+}
+
+.btn:hover {
+    color: var(--cor0);
+}
+
+/* frame */
+#tela {
+    width: 95vh;
+    margin: auto;
+    display: block;
+    border: 2px solid black;
+    height: 400px;
 }
 
 /* rodape */
@@ -290,9 +312,7 @@ footer a:hover {
 
     /* frame */
     #tela {
-        margin: 0px;
-        padding: 0px;
-        width: 90vw;
+        width: 88vw;
     }
 }
 
