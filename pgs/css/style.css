@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans&family=Open+Sans&family=PT+Sans+Caption&family=Roboto&display=swap');
 
 :root {
     --cor0: #f22b56;
@@ -6,11 +7,19 @@
     --cor2: #4d8f81;
     --cor3: #78bd91;
     --cor4: #ebebab;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontTitulo: 'Roboto', sans-serif;
+    --fontSubTitulo: 'PT Sans Caption', sans-serif;
+    --fontTxt: 'Open Sans', sans-serif;
+    --fontLink: 'Noto Sans', sans-serif;
+    --fontMenu: 'Concert One', cursive;
+
 }
 
 body {
     background-color: var(--cor4);
     margin: 0px;
+    font-family: var(--fonte-padrao);
 }
 
 a {
@@ -27,6 +36,7 @@ header {
 
 header h1 {
     font-weight: normal;
+    font-family: var(--fontTitulo);
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
@@ -42,14 +52,26 @@ header p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
 
-header>h1,
+header h1,
 p {
     color: var(--cor0);
 }
 
 /* menu */
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover,
+.Mconteudo:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
+
+/* classes/Id's do menu*/
 #MBarra {
     background-color: var(--cor2);
+    font-family: var(--fontMenu);
     margin: auto;
     padding: 0 20px;
     justify-content: space-between;
@@ -111,16 +133,6 @@ p {
     height: 210px;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-nav a:hover,
-.Mconteudo:hover {
-    text-decoration: underline;
-    color: var(--cor0);
-}
-
 /* corpo */
 main {
     background-color: var(--cor1);
@@ -134,6 +146,7 @@ main {
 }
 
 main>h1 {
+    font-family: var(--fontTitulo);
     text-align: center;
     background-color: var(--cor4);
     color: var(--cor0);
@@ -141,49 +154,69 @@ main>h1 {
     border-radius: 25px;
 }
 
+section p {
+    font-family: var(--fontTxt);
+    color: var(--cor4);
+    text-align: justify;
+}
+
+section p>a {
+    color: var(--cor0);
+}
+
+section a {
+    text-align: center;
+    color: var(--cor2);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+section a:hover {
+    background-color: var(--cor4);
+    color: var(--cor0);
+    cursor: pointer;
+}
+
+/* classes/Id's do corpo*/
 .subTI,
 .subTC,
 .subTP {
+    font-family: var(--fontSubTitulo);
     margin: 2px;
     padding: 10px;
     color: var(--cor1);
     background-color: var(--cor3);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
 }
+
 .subTI,
-.subTC{
+.subTC {
     border-radius: 20px;
 }
-.subTP{
+
+.subTP {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-section>p {
-    color: var(--cor4);
-    text-align: justify;
+#perfil {
+    display: flex;
 }
 
-section>p>a {
-    color: var(--cor0);
+#perfilImg {
+    border-radius: 15px;
 }
 
-section>a {
-    text-align: center;
-    color: var(--cor2);
-    font-size: 2em;
-    text-decoration: none;
+#perfilTxt {
+    padding: 0px 15px;
 }
 
-section>a:hover {
-    background-color: var(--cor4);
-    color: var(--cor0);
-    cursor: pointer;
-}
 
-.aIframe{
+.aIframe {
     margin: auto;
     max-width: 100px;
+    font-family: var(--fontLink);
+    font-size: 2em;
     border-radius: 15px;
     display: block;
 }
@@ -197,7 +230,7 @@ section>a:hover {
     height: 400px;
 }
 
-.caixa{
+.caixa {
     margin-top: 5px;
     padding: 5px 20px 0px 20px;
 }
@@ -260,5 +293,19 @@ footer a:hover {
         margin: 0px;
         padding: 0px;
         width: 90vw;
+    }
+}
+
+@media (max-width: 750px) {
+    #perfil {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #perfilImg {
+        margin: auto;
+        display: block;
+        border-radius: 50%;
     }
 }

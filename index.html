@@ -10,7 +10,7 @@
     <title>Meu Portfólio</title>
 </head>
 
-<body>
+<body onload="carregar()">
     <header>
         <h1>Richard Artur Rodrigues Costa</h1>
         <p>Meu Portfólio</p>
@@ -44,6 +44,9 @@
         </ul>
     </nav>
     <main>
+        <!--
+            Foto sua junto de uma seção com uma descrição sobre você, como você é, o que você gosta, seus hobbies, etc.
+        -->
         <section>
             <h1 class="subTI">Apresentação</h1>
             <p>Olá, meu nome é <strong>Richard Artur Rodrigues Costa</strong>, tenho 22 anos, moro atualmente em <a
@@ -51,27 +54,37 @@
                 da Computação na Faculdade Estácio Belo Horizonte Prado, Noivo da &#x2764;&#xFE0F;<strong>Larissa
                     David</strong>&#x2764;&#xFE0F;, atualmente faço estágio na Defensoria Pública de Minas Gerais no
                 setor de desenvolvimento de projetos. Tenho formação como Técnico de Enfermagem no ano de 2015, e
-                trabalho desde os 14 anos </p>
+                trabalho desde os 14 anos.</p>
         </section>
         <section>
-            <h1 class="subTI">Quem Sou!</h1>
-            <p>Sou uma pessoa determinada e proativa, sempre busco melhorar os meus conhecimentos e correr atrás de
-                novidades, não desisto fácil dos meus objetivos, faço sempre meu melhor às atividades propostas a mim.
-                Gosto do universo <span translate="no">Geek</span>, mas em especial do universo <span
-                    translate="no">Star Wars</span> <img src="img/stick-vader.png" alt="vader" width="26px"
-                    height="26px">, Marvel quadrinho e do <span translate="no">MCU</span>, também curto anime,
-                principalmente <span translate="no">One-Piece</span> <img src="img/stick-hearts.png" alt="piratas-heads"
-                    width="30px" height="26px">, meu heroi favorito é o Homem-Aranha <img src="img/stick-aranha.png"
-                    alt="homem-aranha" width="30px" height="26px">, mas também do Batman e do Justiceiro.</p>
-            <p><strong>Musicas</strong>: Gosto muito de ouvir musicas para relaxar, gosto de <span translate="no">Rock</span>, mais curto muito de musicas <i>vintagens</i> dos anos 90's e 80's. Minha banda preferida é o <span translate="no">Slipknot</span>, mais curto qualquer banda. Meu gosto pelo <span translate="no">Rock</span> começou em um trabalho de escola do ensino médio na materia de Inglês, aonde simulamos um show da banda cantando as musicas, aparti dai, com estudos sobre a banda em geral, comecei a escutar e seguir ele e me torna fã.</p>
-            <p><strong>Filmes/Séries</strong>: Curto assistir nas horas vagas ou para relaxar, meu estilo e bem chato em relação de filmes, mais curto ver Ação e Comédia, e relacionados ao Universo de <span translate="no">Star Wars</span> e Marvel. Meus Atore favorito é o Liam Neeson, mas filmes referentes de Bruce Willis, Jackie Chan e Tom Cruise estão sempre na minha lista.</p>
-            <p><strong translate="no">Game</strong>: Sou um apaixonado por jogos, amo jogar um jogo de FPS, MMORPG e jogos de estrategias, meus titulos favoritos são: <span translate="no">CA(Combat-Arms)</span>, <span translate="no">Tom Clancy's Rainbow Six Siege</span>, <span translate="no">WoW(World of Warcraft)</span>, Dofus, <span translate="no">Black</span>, <span translate="no">Mortal-Kombat(franquia)</span> e outros... &#x1F601;kkkkkkk</p>
-            <p>Sou caseiro, curto diverti em casa, fica nos meu filmes, jogar um bom <span translate="no">Game</span>, mexer no PC e so sair em boas companias e fazer coisas novas. Prazer, esse sou eu!! &#x1F913;</p>
+                <h1 class="subTI">Quem Sou!</h1>
+                <div id="perfil">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/IMG-Chad04.jpg">
+                        <source media="(max-width: 750px)" srcset="img/IMG-Chad03.jpg">
+                        <source media="(max-width: 850px)" srcset="img/IMG-Chad02.jpg">
+                        <img src="img/IMG-Chad01.jpg" alt="Minha Foto" id="perfilImg">
+                    </picture>
+                    <div id="perfilTxt">
+                        <p>Sou uma pessoa determinada e proativa, sempre busco melhorar os meus conhecimentos e correr atrás de
+                            novidades, não desisto fácil dos meus objetivos, faço sempre meu melhor às atividades propostas a mim.
+                            Gosto do universo <span translate="no">Geek</span>, mas em especial do universo <span
+                                translate="no">Star Wars</span> <img src="img/stick-vader.png" alt="vader" width="26px"
+                                height="26px">, Marvel quadrinho e do <span translate="no">MCU</span>, também curto anime,
+                            principalmente <span translate="no">One-Piece</span> <img src="img/stick-hearts.png" alt="piratas-heads"
+                                width="30px" height="26px">, meu heroi favorito é o Homem-Aranha <img src="img/stick-aranha.png"
+                                alt="homem-aranha" width="30px" height="26px">, mas também do Batman e do Justiceiro.</p>
+                        <p><strong>Musicas</strong>: Gosto muito de ouvir musicas para relaxar, gosto de <span translate="no">Rock</span>, mais curto muito de musicas <i>vintagens</i> dos anos 90's e 80's. Minha banda preferida é o <span translate="no">Slipknot</span>, mais curto qualquer banda. Meu gosto pelo <span translate="no">Rock</span> começou em um trabalho de escola do ensino médio na materia de Inglês, aonde simulamos um show da banda cantando as musicas, aparti dai, com estudos sobre a banda em geral, comecei a escutar e seguir ele e me torna fã.</p>
+                        <p><strong>Filmes/Séries</strong>: Curto assistir nas horas vagas ou para relaxar, meu estilo e bem chato em relação de filmes, mais curto ver Ação e Comédia, e relacionados ao Universo de <span translate="no">Star Wars</span> e Marvel. Meus Atore favorito é o Liam Neeson, mas filmes referentes de Bruce Willis, Jackie Chan e Tom Cruise estão sempre na minha lista.</p>
+                        <p><strong translate="no">Game</strong>: Sou um apaixonado por jogos, amo jogar um jogo de FPS, MMORPG e jogos de estrategias, meus titulos favoritos são: <span translate="no">CA (Combat-Arms)</span>, <span translate="no">Tom Clancy's Rainbow Six Siege</span>, <span translate="no">WoW (World of Warcraft)</span>, Dofus, <span translate="no">Black</span>, <span translate="no">Mortal-Kombat (franquia)</span> e outros... &#x1F601;kkkkkkk</p>
+                        <p><strong translate="no">Hobbies</strong>: Sou caseiro, curto diverti em casa, fica nos meu filmes, jogar um bom <span translate="no">Game</span>, mexer no PC e so sair em boas companias e fazer coisas novas. Prazer, esse sou eu!! &#x1F913;</p>
+                    </div>
+                </div>
         </section>
     </main>
     <footer>
         Esse site foi criado pelo <a href="https://github.com/RicCost4" target="_blank">@Richard</a> como consolidação
-        dos estudos e apresentação profissional.
+        dos estudos e apresentação profissional, <span id="data"> </span>.
     </footer>
     <script src="js/app.js"></script>
 </body>
