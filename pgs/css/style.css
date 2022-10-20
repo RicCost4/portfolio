@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans&family=Open+Sans&family=PT+Sans+Caption&family=Roboto&display=swap');
 
 :root {
-    --cor0: #f22b56;
-    --cor1: #9b4b54;
-    --cor2: #4d8f81;
-    --cor3: #78bd91;
-    --cor4: #ebebab;
+    --cor0: #1f0a1d;
+    --cor1: #334f53;
+    --cor2: #45936c;
+    --cor3: #9acc77;
+    --cor4: #e5ead4;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fontTitulo: 'Roboto', sans-serif;
     --fontSubTitulo: 'PT Sans Caption', sans-serif;
@@ -35,6 +35,7 @@ header {
 }
 
 header h1 {
+    color: var(--cor0);
     font-weight: normal;
     font-family: var(--fontTitulo);
     font-size: 3em;
@@ -43,6 +44,7 @@ header h1 {
 }
 
 header p {
+    color: var(--cor4);
     font-size: 1.2em;
     margin: auto;
     padding-bottom: 30px;
@@ -50,11 +52,6 @@ header p {
     padding-left: 10px;
     max-width: 500px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
-}
-
-header h1,
-p {
-    color: var(--cor0);
 }
 
 /* menu */
@@ -65,7 +62,7 @@ nav a {
 nav a:hover,
 .Mconteudo:hover {
     text-decoration: underline;
-    color: var(--cor0);
+    color: var(--cor4);
 }
 
 /* classes/Id's do menu*/
@@ -111,7 +108,7 @@ nav a:hover,
 .Mconteudo,
 #logo,
 #MSand {
-    color: var(--cor1);
+    color: var(--cor0);
     transition-duration: 1s;
 }
 
@@ -126,7 +123,7 @@ nav a:hover,
 #MSand:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: var(--cor4);
+    background-color: var(--cor3);
 }
 
 #MSand:focus~#menu {
@@ -135,7 +132,7 @@ nav a:hover,
 
 /* corpo */
 main {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -146,34 +143,41 @@ main {
 }
 
 main>h1 {
+    margin-bottom: 10px;
     font-family: var(--fontTitulo);
     text-align: center;
-    background-color: var(--cor4);
-    color: var(--cor0);
+    background-color: var(--cor1);
+    color: var(--cor4);
     font-size: 2em;
     border-radius: 25px;
 }
 
-section p {
-    font-family: var(--fontTxt);
+main>h2{
+    padding: 5px 15px;
+    margin: 10px;
+    font-family: var(--fontSubTitulo);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
     color: var(--cor4);
-    text-align: justify;
+    font-size: 1.5em;
+    border-radius: 15px;
 }
 
-section p>a {
-    color: var(--cor0);
+section p {
+    font-family: var(--fontTxt);
+    color: var(--cor1);
+    text-align: justify;
 }
 
 section a {
     text-align: center;
-    color: var(--cor2);
+    color: var(--cor0);
     font-size: 1em;
     text-decoration: none;
 }
 
 section a:hover {
-    background-color: var(--cor4);
-    color: var(--cor0);
+    background-color: var(--cor3);
+    color: var(--cor4);
     cursor: pointer;
 }
 
@@ -183,8 +187,8 @@ section a:hover {
 .subTP {
     font-family: var(--fontSubTitulo);
     padding: 10px;
-    color: var(--cor1);
-    background-color: var(--cor3);
+    color: var(--cor0);
+    background-color: var(--cor2);
 }
 
 .subTI,
@@ -229,12 +233,12 @@ section a:hover {
 }
 
 .caixa{
-    background-color: var(--cor3);
-    color: var(--cor1);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    color: var(--cor4);
 }
 
 .caixa2{
-    color: var(--cor4);
+    color: var(--cor0);
 }
 
 #div1,
@@ -244,8 +248,8 @@ section a:hover {
 }
 
 .btn {
-    background-color: var(--cor3);
-    color: var(--cor1);
+    background-color: var(--cor4);
+    color: var(--cor0);
     padding: 0px 10px;
     border: none;
     font-size: 32px;
@@ -253,8 +257,8 @@ section a:hover {
 }
 
 .btn:hover {
-    background-color: var(--cor4);
-    color: var(--cor0);
+    background-color: var(--cor3);
+    color: var(--cor4);
     cursor: pointer;
 }
 
@@ -269,9 +273,9 @@ section a:hover {
 
 /* rodape */
 footer {
-    background-color: var(--cor2);
+    background: linear-gradient(90deg, var(--cor4) 0%, var(--cor3) 35%, var(--cor3) 58%, var(--cor4) 100%);
     border: 30px;
-    color: var(--cor1);
+    color: var(--cor0);
     text-align: center;
     font-size: 0.9em;
     margin: auto;
@@ -287,12 +291,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor1);
+    color: var(--cor2);
 }
 
 /* responsividade */
 @media (max-width: 850px) {
-    #MBarra {
+    .nav {
         align-items: flex-start;
     }
 
@@ -315,7 +319,7 @@ footer a:hover {
         width: 100%;
     }
 
-    #MBarra,
+    .nav,
     #menu {
         flex-direction: column;
     }
