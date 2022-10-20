@@ -222,11 +222,19 @@ section a:hover {
     display: block;
 }
 
-.caixa {
+.caixa,
+.caixa2 {
     margin: 0px;
+    padding: 5px 20px 0px 20px;
+}
+
+.caixa{
     background-color: var(--cor3);
     color: var(--cor1);
-    padding: 5px 20px 0px 20px;
+}
+
+.caixa2{
+    color: var(--cor4);
 }
 
 #div1,
@@ -240,12 +248,14 @@ section a:hover {
     color: var(--cor1);
     padding: 0px 10px;
     border: none;
-
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .btn:hover {
+    background-color: var(--cor4);
     color: var(--cor0);
+    cursor: pointer;
+    transition-duration: 1s;
 }
 
 /* frame */
