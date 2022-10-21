@@ -262,6 +262,33 @@ section a:hover {
     cursor: pointer;
 }
 
+#tabela {
+    background-color: var(--cor1);
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    max-width: 500px;
+    min-width: 250px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+#TitTab {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ListTab {
+    list-style-type: "\2714\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
 /* frame */
 #tela {
     width: 95vh;
