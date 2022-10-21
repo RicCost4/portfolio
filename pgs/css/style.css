@@ -130,7 +130,7 @@ nav a:hover,
     height: 210px;
 }
 
-/* corpo */
+/* corpo - configuração geral */
 main {
     background-color: var(--cor4);
     min-width: 300px;
@@ -152,7 +152,7 @@ main>h1 {
     border-radius: 25px;
 }
 
-main>h2{
+main>h2 {
     padding: 5px 15px;
     margin: 10px;
     font-family: var(--fontSubTitulo);
@@ -182,29 +182,23 @@ section a:hover {
 }
 
 /* classes/Id's do corpo*/
-.subTI,
-.subTC,
-.subTP {
+.subTI, /* index */
+.subTC, /* carreira */
+.subTP { /* projeto */
     font-family: var(--fontSubTitulo);
     padding: 10px;
     color: var(--cor0);
     background-color: var(--cor2);
 }
 
-.subTI,
-.subTC {
+.subTI, /* index */
+.subTC { /* carreira */
     margin: 2px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
     border-radius: 20px;
 }
 
-.subTP {
-    margin: 0px;
-    margin-top: 15px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
+/* classes/Id's index */
 #perfil {
     display: flex;
 }
@@ -215,6 +209,57 @@ section a:hover {
 
 #perfilTxt {
     padding: 0px 15px;
+}
+
+/* classes/Id's carreira */
+#tabela,
+#SofImg{
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 500px;
+    min-width: 250px;
+}
+#tabela {
+    background-color: var(--cor1);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+#TitTab {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ListTab {
+    list-style-type: "\2714\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+#SofImg img{
+    width: 90px;
+    height: 90px;
+}
+
+#cursos{
+    color: var(--cor1);
+}
+#cursos li{
+    padding: 3px 0px;
+}
+
+/* classes/Id's projeto */
+.subTP {
+    margin: 0px;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .aIframe {
@@ -232,12 +277,12 @@ section a:hover {
     padding: 5px 20px 0px 20px;
 }
 
-.caixa{
+.caixa {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     color: var(--cor4);
 }
 
-.caixa2{
+.caixa2 {
     color: var(--cor0);
 }
 
@@ -262,35 +307,7 @@ section a:hover {
     cursor: pointer;
 }
 
-#tabela {
-    background-color: var(--cor1);
-    margin: auto;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    max-width: 500px;
-    min-width: 250px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
-}
-
-#TitTab {
-    background-color: var(--cor2);
-    color: var(--cor4);
-    padding: 10px;
-    margin: -10px -10px 0 -10px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-#ListTab {
-    list-style-type: "\2714\00A0";
-    list-style-position: inside;
-    columns: 2;
-}
-
-/* frame */
-#tela {
+#tela { /* frame */
     width: 95vh;
     margin: auto;
     display: block;
