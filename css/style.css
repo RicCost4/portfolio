@@ -159,6 +159,7 @@ main>h2 {
     background-image: linear-gradient(to right, var(--cor3), transparent);
     color: var(--cor4);
     font-size: 1.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.808);
     border-radius: 15px;
 }
 
@@ -182,17 +183,22 @@ section a:hover {
 }
 
 /* classes/Id's do corpo*/
-.subTI, /* index */
-.subTC, /* carreira */
-.subTP { /* projeto */
+.subTI,
+/* index */
+.subTC,
+/* carreira */
+.subTP {
+    /* projeto */
     font-family: var(--fontSubTitulo);
     padding: 10px;
     color: var(--cor0);
     background-color: var(--cor2);
 }
 
-.subTI, /* index */
-.subTC { /* carreira */
+.subTI,
+/* index */
+.subTC {
+    /* carreira */
     margin: 2px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
     border-radius: 20px;
@@ -213,13 +219,14 @@ section a:hover {
 
 /* classes/Id's carreira */
 #tabela,
-#SofImg{
+#SofImg {
     text-align: center;
     margin: auto;
     display: block;
     max-width: 500px;
     min-width: 250px;
 }
+
 #tabela {
     background-color: var(--cor1);
     margin-top: 15px;
@@ -242,15 +249,16 @@ section a:hover {
     columns: 2;
 }
 
-#SofImg img{
+#SofImg img {
     width: 90px;
     height: 90px;
 }
 
-#cursos{
+#cursos {
     color: var(--cor1);
 }
-#cursos li{
+
+#cursos li {
     padding: 3px 0px;
 }
 
@@ -307,7 +315,8 @@ section a:hover {
     cursor: pointer;
 }
 
-#tela { /* frame */
+#tela {
+    /* frame */
     width: 95vh;
     margin: auto;
     display: block;
@@ -316,19 +325,19 @@ section a:hover {
 }
 
 /* classes/Id's contatos */
-#contatos{
+#contatos {
     margin: 0;
     padding: 0;
 }
 
-#contatos p{
+#contatos p {
     margin: auto;
     padding: 20px 20px;
     display: flex;
     justify-content: center;
 }
 
-#contatos a{
+#contatos a {
     background-color: var(--cor3);
     color: var(--cor1);
     width: 300px;
@@ -342,21 +351,22 @@ section a:hover {
     transition-duration: 1s;
 }
 
-.cnt:hover{
+.cnt:hover {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor3), var(--cor4));
     color: var(--cor4);
 }
 
-#cv:hover{
+#cv:hover {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
 }
 
-#contatos img{
+#contatos img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     vertical-align: top;
 }
+
 /* rodape */
 footer {
     background: linear-gradient(90deg, var(--cor4) 0%, var(--cor3) 35%, var(--cor3) 58%, var(--cor4) 100%);
