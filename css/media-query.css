@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* todas as demais medias*/
+/* Typical Device Breakpoints
+----------------------------------
+        Pequenas Telas: ate 600px
+        Celular: +600px == 768px
+        Tablet's: +768 == 992px
+        Desktop's: +992px == 1200px
+        Grandes Telas: +1200px
+*/
+
+/* responsividade */
+@media screen and (max-width: 850px) {
+    .nav {
+        align-items: flex-start;
+    }
+
+    #menu {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    #MSand {
+        display: flex;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    .lista,
+    #menu {
+        width: 100%;
+    }
+
+    .nav,
+    #menu {
+        flex-direction: column;
+    }
+
+    /* frame */
+    #tela {
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #perfil {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #perfilImg {
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #contatos p{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contatos a{
+        font-size: 20px;
+    }
+}
