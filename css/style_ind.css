@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import url(style.css);
+
+/* classes/Id's do corpo*/
+/* index */
+.subTI {
+    font-family: var(--fontSubTitulo);
+    padding: 10px;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    margin: 2px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+    border-radius: 20px;
+}
+
+#perfil {
+    display: flex;
+}
+
+#perfilImg {
+    border-radius: 15px;
+}
+
+#perfilTxt {
+    padding: 0px 15px;
+}

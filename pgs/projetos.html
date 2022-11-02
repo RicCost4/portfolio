@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" media="all">
+    <link rel="stylesheet" href="../css/style_pro.css">
     <link rel="stylesheet" href="../css/media-query.css">
     <link rel="shortcut icon" href="../img/chad.ico" type="image/x-icon">
     <title>Richard</title>
@@ -44,18 +45,19 @@
         </ul>
     </nav>
     <main>
-        <!--
-            Uma seção com os projetos que você já fez e (de preferência) que estejam no github e já tenha hospedados para a pessoa conseguir ver ele funcionando.. 
-            
-            
-        -->
         <h1>Meus Projetos</h1>
+
+        <!-- Sites -->
         <h2>Sites</h2>
         <section>
-            <h1 class="subTP">Projeto Site Android  <button class="btn" id="btn1" onclick="mostrar('div1', 'btn1')">&#8595;</button></h1>
+            <h1 class="subTP">Projeto Site Android <button class="btn" id="btn1"
+                    onclick="mostrar('div1', 'btn1')">&#8595;</button></h1>
             <div id="div1">
                 <p class="caixa">
-                    O Projeto Android foi construindo no Modulo 2 no Cap-17. Neste projeto foi uma consolidação dos estudos até este ponto, incrementando o estudo da responsividade, sem entrar ainda no conceito do <span translate="no" id="media">@media screen</span>, construído um modelo com incremento de responsividade de imagens, vídeos e <span translate="no">Box-Model</span>. 
+                    O Projeto Android foi construindo no Modulo 2 no Cap-17. Neste projeto foi uma consolidação dos
+                    estudos até este ponto, incrementando o estudo da responsividade, sem entrar ainda no conceito do
+                    <span translate="no" id="media">@media screen</span>, construído um modelo com incremento de
+                    responsividade de imagens, vídeos e <span translate="no">Box-Model</span>.
                 </p>
                 <iframe src="../desafio_android/desafio_android.html" frameborder="1" id="tela" name="tela">
                     <p>Infelizmente seu navegador não é compatível com isso.</p>
@@ -63,11 +65,14 @@
                 <a href="../desafio_android/desafio_android.html" target="_blank" class="aIframe">Site</a>
             </div>
         </section>
+
         <section>
-            <h1 class="subTP">Projeto Site Cordel  <button class="btn" id="btn2" onclick="mostrar('div2', 'btn2')">&#8595;</button></h1>
+            <h1 class="subTP">Projeto Site Cordel <button class="btn" id="btn2"
+                    onclick="mostrar('div2', 'btn2')">&#8595;</button></h1>
             <div id="div2">
                 <p class="caixa">
-                    O Projeto Cordel, foi um site construído no Modulo 3 Cap-20. Neste projeto foi uma consolidação dos estudos até agora, mais o do capitulo 20 com o efeito <span translate="no">Paralax</span>. 
+                    O Projeto Cordel, foi um site construído no Modulo 3 Cap-20. Neste projeto foi uma consolidação dos
+                    estudos até agora, mais o do capitulo 20 com o efeito <span translate="no">Paralax</span>.
                 </p>
                 <iframe src="../desafio_cordel/desafio_cordel.html" frameborder="1" id="tela" name="tela">
                     <p>Infelizmente seu navegador não é compatível com isso.</p>
@@ -75,11 +80,14 @@
                 <a href="../desafio_cordel/desafio_cordel.html" target="_blank" class="aIframe">Site</a>
             </div>
         </section>
+
         <section>
-            <h1 class="subTP">Projeto Site Redes Sociais  <button class="btn" id="btn3" onclick="mostrar('div3', 'btn3')">&#8595;</button></h1>
+            <h1 class="subTP">Projeto Site Redes Sociais <button class="btn" id="btn3"
+                    onclick="mostrar('div3', 'btn3')">&#8595;</button></h1>
             <div id="div3">
                 <p class="caixa">
-                    O Projeto Redes Sociais, foi um site construído no Modulo 4 Cap-23. Neste projeto foi uma consolidação dos estudos até agora, mais o estudo do <span translate="no">iframe</span>. 
+                    O Projeto Redes Sociais, foi um site construído no Modulo 4 Cap-23. Neste projeto foi uma
+                    consolidação dos estudos até agora, mais o estudo do <span translate="no">iframe</span>.
                 </p>
                 <iframe src="../desafio redes_sociais/redes_sociais.html" frameborder="1" id="tela" name="tela">
                     <p>Infelizmente seu navegador não é compatível com isso.</p>
@@ -87,36 +95,95 @@
                 <a href="../desafio redes_sociais/redes_sociais.html" target="_blank" class="aIframe">Site</a>
             </div>
         </section>
+
+        <!-- Hospedados no github -->
         <h2>Hospedados no GitHub</h2>
         <section>
-            <h1 class="subTP">Analizador de Numero</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Analizador%20de%20Numeros" target="_blank">Codigo no Repositorio</a>
+            <h1 class="subTP">Analisador de Números</h1>
+            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Analizador%20de%20Numeros"
+                target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Esse projeto foi desenvolvido como estudo de manipulação de DOM em JS. O HTML e o CSS são simples e foi usado como modelo só para visualizar o funcionamento. Essa atividade mostra a captura dos números digitados e quando o usuário quiser finalizar, irá mostrar uns dados sobre os números digitados, ele valida certas ações do usuário feita incorretamente &#x1F602; ex: 1, 2, 5, 10, 45 &rarr; <strong>FINALIZAR</strong> = "Ao todo, temos 5 números cadastrados; O maior valor adicionado foi 45; O menor valor adicionado foi 1; somando todos os valores, temos 63; A média dos valores digitados é 12.6."
+            </p>
+            <p class="caixa2">
+                O código em JS começa selecionando o HTML e armazenando numa variável e declaramos um array para armazena os números captados pelo <span translate="no">input</span> (usei o <span translate="no">let</span> para declarar as variáveis, pois preferi com exemplo de declaração em bloco, e não em escopo).
+            </p>
+            <p class="caixa2">
+                Agora iremos criar várias funções para administrar nossos números e mostrar o resultado no nosso HTML:
+                <ul>
+                    <li>
+                        Função para validar número;
+                    </li>
+                    <li>
+                        Função para ver se o número e repetido;
+                    </li>
+                    <li>
+                        Função para adicionar o número na lista validando se é valido ou se não está já na lista e mostrando ele na caixa criada no HTML quando clicamos em adicionar número;
+                    </li>
+                    <li>
+                        Função para mostrar os dados específicos da lista e dos números adicionado quando clicamos em validar;
+                    </li>
+                </ul>
+            </p>
         </section>
+
         <section>
             <h1 class="subTP">Contador</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Contador" target="_blank">Codigo no Repositorio</a>
+            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Contador" target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Esse projeto foi desenvolvido como estudo de manipulação de DOM em JS. O HTML e o CSS são simples e foi usado como modelo só para visualizar o funcionamento. Essa atividade mostra uma sequência de números que irá contar quando inserimos um número para começar, um número para termina e o passo que irá mostrar e ainda valida certos erros possíveis &#x1F602;, ex: 1 ate 5 de 2 em 2 = 1, 3, 5
+            </p>
+            <p class="caixa2">
+                O código em JS começa nos capturamos e armazenando os seletores HTML em variáveis <span translate="no">let</span>. Nosso código usa uma estrutura de condição para validar a inserção de dados verificando se tem números inseridos corretamente em cada campo, se estiver valido prossiga dentro do else a captura dos valores e utiliza outras condições para verificar certos números e a ordem da contagem e utiliza o for para mostrar a ordem dos números inserindo no HTML no final do <span translate="no">loop</span>
+            </p>
         </section>
+
         <section>
-            <h1 class="subTP">Relogio</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Relogio" target="_blank">Codigo no Repositorio</a>
+            <h1 class="subTP">Relógio</h1>
+            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Relogio" target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Esse projeto foi desenvolvido como estudo de manipulação de DOM em JS. O HTML e o CSS são simples e foi usado como modelo só para visualizar o funcionamento. Essa atividade nos mostrara a manipulação todo do corpo do site usando o <span translate="no">scope</span> <span translate="no">onload()</span> js para muda visualmente quando acessássemos em certas horas do dia.
+            </p>
+            <p class="caixa2">
+                O código em JS começa nos capturamos e armazenando os seletores HTML em variáveis var (estudos iniciamos em <span translate="no">var</span> e depois virmos o <span translate="no">let</span>) e também usamos uma função do próprio JS de capturarmos a data do servidor o <span translate="no">new Date()</span> e com a variável capturamos a hora e o minuto, e definimos a inserção destes valores no HTML. Usamos a estrutura de condição para validar as horas e fazer a manipulação do DOM no momento que o usuário acessa o site.
+            </p>
         </section>
+
         <section>
             <h1 class="subTP">Tabuada</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Tabuada" target="_blank">Codigo no Repositorio</a>
+            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Tabuada" target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Esse projeto foi desenvolvido como estudo de manipulação de DOM em JS. O HTML e o CSS são simples e foi usado como modelo só para visualizar o funcionamento. Essa atividade mostrara a tabuada do número digitado.
+            </p>
+            <p class="caixa2">
+                O código em JS começa nos capturamos e armazenando os seletores HTML em variáveis <span translate="no">var</span> e usamos estrutura de condição para validar o número digitado e se estiver correto armazena esse número em outra variável e entra no <span translate="no">loop</span> while até multiplicar em 10 e exibir no HTML.
+            </p>
         </section>
+
         <section>
             <h1 class="subTP">Verificador de Idade</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Verificador%20de%20Idade" target="_blank">Codigo no Repositorio</a>
+            <a href="https://github.com/RicCost4/Repositorio-HTML/tree/main/Verificador%20de%20Idade"
+                target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Esse projeto foi desenvolvido como estudo de manipulação de DOM em JS. O HTML e o CSS são simples e foi usado como modelo só para visualizar o funcionamento. Essa atividade mostrar o resultado da sua idade com umas imagens ilustrativa junto com o seu gênero selecionado.
+            </p>
+            <p class="caixa2">
+                O código em JS começa nos capturamos e armazenando os seletores HTML em variáveis <span translate="no">var</span> e usamos a função <span translate="no">new Date()</span> para capturar o ano, usamos uma estrutura de condição para valida o número inserido, e se estiver certo, entramos na captura dos dados e do gênero e da imagem, validamos o gênero primeiro, dentro do gênero validamos a idade para ser exibida a imagem no HTML e no final e mostrado a idade junto cm a imagem.
+            </p>
         </section>
+
         <section>
             <h1 class="subTP">Outros Projetos</h1>
-            <p class="caixa2">Texto em Construção...</p>
-            <a href="https://github.com/RicCost4/Repositorio-HTML" target="_blank">Codigo no Repositorio</a>
+            <a href="https://github.com/RicCost4/Repositorio-HTML" target="_blank" class="link">Codigo no
+                Repositorio - click aqui</a>
+            <p class="caixa2">
+                Todos os projetos hospedados no GitHub &#x1F60E;&#128077;
+            </p>
         </section>
     </main>
     <footer id="rodape">

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url(style.css);
+
+/* classes/Id's do corpo*/
+/* carreira */
+.subTC{
+    font-family: var(--fontSubTitulo);
+    padding: 10px;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    margin: 2px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+    border-radius: 20px;
+}
+
+#tabela,
+#SofImg {
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 500px;
+    min-width: 250px;
+}
+
+#tabela {
+    background-color: var(--cor1);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+#TitTab {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ListTab {
+    list-style-type: "\2714\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+#SofImg img {
+    width: 90px;
+    height: 90px;
+}
+
+#cursos {
+    color: var(--cor1);
+}
+
+#cursos li {
+    padding: 3px 0px;
+}

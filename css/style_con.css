@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url(style.css);
+
+/* classes/Id's do corpo*/
+#contatos {
+    margin: 0;
+    padding: 0;
+}
+
+#contatos p {
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#contatos a {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    width: 300px;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transition-duration: 1s;
+}
+
+.cnt:hover {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3), var(--cor4));
+    color: var(--cor4);
+}
+
+#cv:hover {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+}
+
+#contatos img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: top;
+}

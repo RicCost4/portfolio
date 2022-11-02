@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url(style.css);
+
+/* classes/Id's do corpo*/
+/* projeto */
+.subTP {
+    font-family: var(--fontSubTitulo);
+    padding: 10px;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    margin: 0px;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.link,
+.aIframe {
+    margin: auto;
+    display: block;
+}
+
+.aIframe {
+    max-width: 100px;
+    font-family: var(--fontLink);
+    font-size: 2em;
+    border-radius: 15px;
+}
+
+.link{
+    max-width: 260px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.caixa,
+.caixa2 {
+    margin: 0px;
+    padding: 5px 20px 0px 20px;
+}
+
+.caixa {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    color: var(--cor4);
+}
+
+.caixa2 {
+    color: var(--cor1);
+}
+
+#div1,
+#div2,
+#div3 {
+    display: none;
+}
+
+.btn {
+    background-color: var(--cor4);
+    color: var(--cor0);
+    padding: 0px 10px;
+    border: none;
+    font-size: 32px;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    cursor: pointer;
+}
+
+#tela {
+    /* frame */
+    width: 95vh;
+    margin: auto;
+    display: block;
+    border: 2px solid black;
+    height: 400px;
+}
