@@ -167,6 +167,7 @@ section p {
     font-family: var(--fontTxt);
     color: var(--cor1);
     text-align: justify;
+    text-indent: 30px;
 }
 
 section a {
