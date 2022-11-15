@@ -14,7 +14,6 @@
     border-top-right-radius: 20px;
 }
 
-.link,
 .aIframe {
     margin: auto;
     display: block;
@@ -28,9 +27,20 @@
 }
 
 .link{
-    max-width: 260px;
-    padding: 5px;
-    border-radius: 10px;
+    width: 165px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: var(--cor1);
+}
+
+.link:hover{
+    color: var(--cor2);
+    background-color: var(--cor4);
+}
+
+.link > span:hover{
+    color: var(--cor0);
 }
 
 .caixa,
@@ -46,6 +56,15 @@
 
 .caixa2 {
     color: var(--cor1);
+    border-left: 2px solid var(--cor2);
+    border-right: 2px solid var(--cor2);
+}
+
+#ul-caixa2{
+    margin: 0px;
+    padding-top: 20px;
+    border-left: 2px solid var(--cor2);
+    border-right: 2px solid var(--cor2);
 }
 
 #div1,
@@ -55,8 +74,8 @@
 }
 
 .btn {
-    background-color: var(--cor4);
-    color: var(--cor0);
+    background-color: var(--cor2);
+    color: var(--cor4);
     padding: 0px 10px;
     border: none;
     font-size: 32px;
@@ -65,7 +84,6 @@
 
 .btn:hover {
     background-color: var(--cor3);
-    color: var(--cor4);
     cursor: pointer;
 }
 
