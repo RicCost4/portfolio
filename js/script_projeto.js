@@ -1,12 +1,19 @@
 function mostrar(div, btn){
+    const config = {
+        "emoji":{
+            "setaCima": "&#8593;",
+            "setaBaixo": "&#8595;"
+        }
+    }
+
     let divs = document.getElementById(div)
     let elem = document.getElementById(btn)
 
     if(divs.style.display == 'block'){
-        elem.innerHTML = '&#8595;'
+        elem.innerHTML = config.emoji.setaBaixo
         divs.style.display = 'none'
     } else{
-        elem.innerHTML = '&#8593;'
+        elem.innerHTML = config.emoji.setaCima
         divs.style.display = 'block'
     }
 }
