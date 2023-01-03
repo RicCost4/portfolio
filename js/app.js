@@ -24,7 +24,7 @@ function carregar(){
     cab.innerHTML = `<h1>${config.nome} ${config.sobrenome}</h1><p>${config.mensagem}</p>`
 
     //rodapé
-    foo.innerHTML = `Esse site foi criado pelo <a href=${config.links.github} target="_blank">@${config.nome}</a> como consolidação dos estudos e apresentação profissional, 2022 - ${year}.`
+    foo.innerHTML = `Esse site foi criado pelo <a href=${config.links.github} target="_blank">@${config.nome}</a> como consolidação dos estudos e apresentação profissional, 2022 - ${year} versão 1.0.`
 
     //menu
     Msand.innerHTML = `${config.emoji.menu}`
