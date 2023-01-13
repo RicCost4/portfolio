@@ -2,7 +2,7 @@ function carregar(){
     const config = {
         "nome": "Richard",
         "sobrenome": "Artur Rodrigues Costa",
-        "mensagem": "Meu Portfólio",
+        "mensagem": "Meu Portfólio - 'descontinuado'",
         "links":{
             "github": "https://github.com/RicCost4",
             "curriculo": "https://drive.google.com/file/d/1P9_paRr1dDMdg6O04crYYKRb0S_Y-Kdh/view?usp=share_link"
@@ -24,7 +24,7 @@ function carregar(){
     cab.innerHTML = `<h1>${config.nome} ${config.sobrenome}</h1><p>${config.mensagem}</p>`
 
     //rodapé
-    foo.innerHTML = `Esse site foi criado pelo <a href=${config.links.github} target="_blank">@${config.nome}</a> como consolidação dos estudos e apresentação profissional, 2022 - ${year} versão 1.0.`
+    foo.innerHTML = `Esse site foi criado pelo <a href=${config.links.github} target="_blank">@${config.nome}</a> como consolidação dos estudos e apresentação profissional, 2022 - ${year} versão 1.0. - 'descontinuado'`
 
     //menu
     Msand.innerHTML = `${config.emoji.menu}`
