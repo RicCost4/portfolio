@@ -5,7 +5,7 @@ function carregar(){
         "mensagem": "Meu Portfólio - 'descontinuado'",
         "links":{
             "github": "https://github.com/RicCost4",
-            "curriculo": "https://drive.google.com/file/d/1P9_paRr1dDMdg6O04crYYKRb0S_Y-Kdh/view?usp=share_link"
+            "curriculo": "#"
         },
         "emoji":{
             "menu": "&#9776;"
@@ -31,6 +31,6 @@ function carregar(){
 
     //baixar curriculo
     cv.innerHTML = `
-        <a href=${config.links.curriculo} target="_blank" id="cv"><span class="material-symbols-outlined">move_to_inbox</span> Baixar Curriculo!</a>
+        <a href=${config.links.curriculo} id="cv"><span class="material-symbols-outlined">move_to_inbox</span> Baixar Curriculo!</a>
     `
 }
